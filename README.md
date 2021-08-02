@@ -21,6 +21,10 @@ Rust will need the bin-utils crate and llvm tools preview component.  This can b
 	cargo install cargo-binutils
 	rustup component add llvm-tools-preview
 
+After installing QEMU above, you may need to add the QEMU install directory to your path.  Make sure you can run the application in the terminal:
+
+	qemu-system-arm --version
+
 ## Building the application
 To build the application, the cargo tool can be used with the toml configuration files to create the binary.  Just run the following command:
 	
