@@ -20,7 +20,7 @@ Rust will need the bin-utils crate and llvm tools preview component.  This can b
 	
 	cargo install cargo-binutils
 	rustup component add llvm-tools-preview
-
+	
 After installing QEMU above, you may need to add the QEMU install directory to your path.  Make sure you can run the application in the terminal:
 
 	qemu-system-arm --version
@@ -50,6 +50,8 @@ which uses the config.toml setup to run the same QEMU command.
 This will run the helloworldapp built by the cargo build for the thumbv7m-non-eabi target on an emulated cortex m3 machine .  The following should be printed to verify it worked:
 
 `"Hello D5 World!"`
+
+![Example Run](/example_run.png)
 
 
 	
